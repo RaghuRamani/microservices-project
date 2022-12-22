@@ -1,0 +1,23 @@
+### Spring properties
+# Service registers under this name
+spring:
+  application:
+    name: hdccbank-microservice
+  datasource: 
+    url: jdbc:oracle:thin:@localhost:1521:xe 
+    username: system
+    password: raghu555
+    driver-class-name: oracle.jdbc.OracleDriver
+    
+# Discovery Server Access
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:4567/eureka/
+
+# HTTP Server (Tomcat) Port
+server: 
+  port: 4333
+
+  
+ 
